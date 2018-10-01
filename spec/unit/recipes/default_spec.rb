@@ -23,8 +23,8 @@ describe 'python::default' do
       expect(chef_run).to update_apt_update('update')
     end
 
-    it 'should add python_pip3 to the source list' do
-      expect(chef_run).to install_package('python3-pip')
+    it 'should add python_pip to the source list' do
+      expect(chef_run).to install_package('python-pip')
     end
 
     it 'should add libncurses5-dev to the source list' do
